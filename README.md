@@ -1,4 +1,5 @@
-# computer_vision
+# Semantic Segmentation on MIT ADE20K Dataset
+
 
 ![image](https://user-images.githubusercontent.com/11797397/201411816-ecc57921-fd9e-4f71-8614-4faf14febad9.png)
 ![image](https://user-images.githubusercontent.com/11797397/201411867-4f41b8ec-34ed-47ef-a0de-a8ba378a2852.png)
