@@ -1,4 +1,31 @@
-# computer_vision
+# Semantic Segmentation on MIT ADE20K Dataset
+Pytorch implementation for Semantic Segmentation/Scene Parsing on MIT ADE20K dataset https://github.com/CSAILVision/semantic-segmentation-pytorch
+
+
+ADE20K is the largest open source dataset for semantic segmentation and scene parsing, released by MIT Computer Vision team.
+All pretrained models can be found at: http://sceneparsing.csail.mit.edu/model/pytorch
+
+### Supported models
+We split our models into encoder and decoder, where encoders are usually modified directly from classification networks, and decoders consist of final convolutions and upsampling. We have provided some pre-configured models in the config folder.
+
+### Encoder:
+
+- MobileNetV2dilated
+- ResNet18/ResNet18dilated
+- ResNet50/ResNet50dilated
+- ResNet101/ResNet101dilated
+- HRNetV2 (W48)
+### Decoder:
+
+- C1 (one convolution module)
+- C1_deepsup (C1 + deep supervision trick)
+- PPM (Pyramid Pooling Module, see PSPNet paper for details.)
+- PPM_deepsup (PPM + deep supervision trick)
+- UPerNet (Pyramid Pooling + FPN head, see UperNet for details.)
+### Performance:
+
+![image](https://user-images.githubusercontent.com/11797397/202392625-9c35b9c5-3af9-4a52-abd7-bc0c16259c1c.png)
+
 
 ![image](https://user-images.githubusercontent.com/11797397/201411816-ecc57921-fd9e-4f71-8614-4faf14febad9.png)
 ![image](https://user-images.githubusercontent.com/11797397/201411867-4f41b8ec-34ed-47ef-a0de-a8ba378a2852.png)
